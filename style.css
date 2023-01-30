@@ -2,4 +2,46 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* Styling Main Container */
+/* our main container will have just 2 columns one for the menu and the other for the content*/
+.main-container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  height: 100vh;
+}
+
+.menu-container {
+  background-color: crimson;
+}
+
+.menu-list {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.menu-item {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: gold;
+}
+.menu-item:first-child {
+  margin-bottom: 4rem;
+}
+
+.content-container {
+  background-color: yellow;
 }
