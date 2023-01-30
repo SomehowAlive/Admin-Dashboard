@@ -26,7 +26,7 @@ body {
 .main {
   display: grid;
   grid-template-columns: 1fr 5fr;
-  grid-template-rows: 1fr 8fr;
+  grid-template-rows: 2fr 8fr;
   padding: 1rem;
   height: 100%;
 }
@@ -86,9 +86,75 @@ body {
 }
 
 /* Styling the Header */
-.header {
+.header-cont {
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: minmax(400px, 6fr) 0.5fr 3fr;
+  grid-template-rows: 1.5fr 2fr;
   border-top-right-radius: var(--roundness);
-  background-color: goldenrod;
+  background-color: rgb(230, 230, 230);
+  padding: 0.5rem;
+}
+/* .header-cont * {
+  border: 1px solid black !important;
+} */
+.header-cont > div {
+  display: flex;
+  padding: 20px 40px;
+  justify-content: flex-start;
+  gap: 10px;
+  align-items: center;
+}
+.btns-cont {
+  justify-content: space-around !important;
+  grid-column: 2 / -1;
+}
+.profile-cont {
+  justify-self: end;
+}
+#search {
+  outline: none;
+  border: none;
+  border-radius: var(--roundness);
+  background-color: rgb(209, 209, 209);
+  min-width: 70%;
+  padding: 10px 30px;
+}
+
+.pfp {
+  border-radius: 50%;
+}
+.pfp.small {
+  width: 40px;
+  height: auto;
+}
+.name {
+  font-size: 1.2rem;
+}
+.role {
+  font-size: 0.8rem;
+}
+.greeting {
+  font-size: 1.6rem;
+}
+.username {
+  font-size: 2rem;
+  font-weight: 900;
+}
+.pfp.big {
+  width: 80px;
+}
+
+.btn {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: var(--roundness);
+  padding: 0.7rem 2em;
+  color: white;
+  font-size: 1.2rem;
+  background-color: #2495b4;
+  box-shadow: 0 0 0 -2px transparent;
 }
 
 /* Styling the main content */
