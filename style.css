@@ -175,10 +175,17 @@ body {
 .main-content {
   overflow: scroll;
   overflow-x: hidden;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   background-color: rgb(225, 229, 240);
   border-bottom-right-radius: var(--roundness);
 }
+.main-content > div {
+  border: 1px solid black;
+}
 .cards-container {
+  grid-column: 1 / -1;
   padding: 4rem;
 }
 .cards-list {
@@ -244,4 +251,17 @@ body {
 }
 .card:nth-child(4):hover {
   background-color: rgba(255, 0, 0, 0.03);
+}
+
+.projects-container {
+  grid-row: 2 / -1;
+  padding: 4rem;
+}
+.projects-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+}
+.project {
+  padding: 2rem 4rem;
+  background-color: white;
 }
