@@ -92,8 +92,10 @@ body {
   width: 55px;
 }
 
-.sidebar-link-icon {
+.icon {
   width: 30px;
+}
+.sidebar-link-icon {
   filter: invert();
 }
 
