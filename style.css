@@ -104,7 +104,7 @@ body {
   overflow: hidden;
   display: grid;
   grid-template-columns: minmax(400px, 6fr) 0.5fr 3fr;
-  grid-template-rows: 1.5fr 2fr;
+  grid-template-rows: 1.5fr calc(100% - 1.5fr);
   border-top-right-radius: var(--roundness);
   background-color: white;
   padding: 0.5rem;
@@ -173,6 +173,7 @@ body {
 
 /* Styling the main content */
 .main-content {
+  overflow: scroll;
   background-color: rgb(225, 229, 240);
   border-bottom-right-radius: var(--roundness);
 }
