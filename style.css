@@ -19,11 +19,14 @@ ul {
 /* styling the body */
 
 body {
+  height: 100vh;
+}
+
+.main {
   display: grid;
   padding: 1.5rem;
   grid-template-columns: 1fr 5fr;
   grid-template-rows: 1fr 8fr;
-  height: 100vh;
 }
 
 /* Styling the sidebar */
