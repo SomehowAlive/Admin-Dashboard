@@ -65,6 +65,7 @@ body {
   display: grid;
   grid-template-columns: 2fr 5fr;
   justify-items: start;
+  align-items: center;
   text-decoration: none;
   color: white;
   padding: 1rem;
@@ -83,6 +84,9 @@ body {
 }
 .top-links .sidebar-link:hover {
   background: none;
+}
+#logo {
+  width: 55px;
 }
 
 .sidebar-link-icon {
