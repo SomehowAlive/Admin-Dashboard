@@ -20,6 +20,7 @@ ul {
 /* styling the body */
 
 body {
+  font-family: "Poppins", sans-serif;
   height: 100vh;
   background-color: rgb(194, 194, 194);
 }
@@ -72,7 +73,7 @@ body {
   padding: 1rem 3rem;
   margin: 0.5rem 0;
   font-size: 1.3rem;
-  font-weight: 800;
+  font-weight: 600;
   transition: 0.2s ease;
 }
 
