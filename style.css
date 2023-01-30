@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  border: 1px solid red;
 }
 
 img {
@@ -11,4 +12,25 @@ img {
 
 ul {
   list-style: none;
+}
+
+/* styling the body */
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 8fr;
+  height: 100vh;
+  background: blueviolet;
+}
+
+.sidebar {
+  grid-row: 1 / span 2;
+  background-color: cadetblue;
+}
+.header {
+  background-color: antiquewhite;
+}
+.main-content {
+  background-color: tomato;
 }
