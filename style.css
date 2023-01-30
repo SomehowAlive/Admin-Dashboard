@@ -85,6 +85,11 @@ body {
   background: none;
 }
 
+.sidebar-link-icon {
+  width: 30px;
+  filter: invert();
+}
+
 /* Styling the Header */
 .header-cont {
   overflow: hidden;
