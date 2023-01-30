@@ -259,9 +259,34 @@ body {
 }
 .projects-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
 }
 .project {
-  padding: 2rem 4rem;
+  display: grid;
+  padding: 2rem;
   background-color: white;
+  border-radius: var(--roundness);
+}
+.project-title {
+  padding: 0.25rem 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.project-bio {
+  font-size: 0.9rem;
+}
+.project > .icons {
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin-bottom: 0;
+  justify-content: space-around;
+  justify-self: end;
+}
+.icons img {
+  margin: none;
+  padding: none;
 }
