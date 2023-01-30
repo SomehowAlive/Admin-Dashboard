@@ -29,12 +29,13 @@ body {
   display: grid;
   grid-template-columns: 1fr 5fr;
   grid-template-rows: 2fr 8fr;
-  padding: 1rem;
+  padding: 2rem;
   height: 100%;
 }
 
 /* Styling the sidebar */
 .sidebar {
+  z-index: 2;
   border-top-left-radius: var(--roundness);
   border-bottom-left-radius: var(--roundness);
   background: #000046; /* fallback for old browsers */
@@ -100,6 +101,10 @@ body {
 }
 
 /* Styling the Header */
+.header {
+  box-shadow: 0 10px 15px -3px0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
 .header-cont {
   overflow: hidden;
   display: grid;
@@ -181,12 +186,10 @@ body {
   background-color: rgb(225, 229, 240);
   border-bottom-right-radius: var(--roundness);
 }
-.main-content > div {
-  border: 1px solid black;
-}
+
 .cards-container {
   grid-column: 1 / -1;
-  padding: 4rem;
+  padding: 4rem 2rem 1rem 4rem;
 }
 .cards-list {
   display: grid;
@@ -200,7 +203,6 @@ body {
   text-align: center;
   padding: 2.5rem 1rem;
   background: rgb(255, 255, 255);
-  box-shadow: 0 0 15px -5px rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(40px);
   border-radius: var(--roundness);
   transition: 0.4s ease;
@@ -255,14 +257,15 @@ body {
 
 .projects-container {
   grid-row: 2 / -1;
-  padding: 4rem;
+  padding: 1.5rem 4rem;
 }
 .projects-list {
   display: grid;
   justify-content: center;
   align-items: center;
   justify-items: center;
-  grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(32%, 1fr));
+  gap: 40px;
 }
 .project {
   display: grid;
