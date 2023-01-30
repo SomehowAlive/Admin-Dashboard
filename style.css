@@ -36,11 +36,11 @@ body {
   border-top-left-radius: var(--roundness);
   border-bottom-left-radius: var(--roundness);
   background: #000046; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #0b85a7, #000046); /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to bottom, #2495b4, #0d0838); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to bottom,
-    #0b85a7,
-    #000046
+    #2495b4,
+    #0d0838
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   grid-row: 1 / -1;
@@ -73,7 +73,12 @@ body {
   transition: 0.2s ease;
 }
 
-.sidebar-link:hover {
+.sidebar-link.current {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-left: 4px solid white;
+}
+
+.sidebar-link:hover:not(.current) {
   background-color: rgba(0, 0, 0, 0.2);
 }
 .top-links .sidebar-link:hover {
