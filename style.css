@@ -178,6 +178,7 @@ body {
   overflow: scroll;
   overflow-x: hidden;
   display: grid;
+  align-items: baseline;
   grid-template-columns: 3fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   background-color: rgb(225, 229, 240);
@@ -289,4 +290,29 @@ body {
 .icons img {
   margin: none;
   padding: none;
+}
+
+/* Anouncments Section */
+.anouncements-container {
+  padding: 1rem;
+}
+.anouncements-list {
+  border-radius: var(--roundness);
+  padding: 1rem 2rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+.anouncement {
+  padding: 0.25rem;
+  border-bottom: 1px solid gray;
+}
+.anouncement:last-child {
+  border: none;
+}
+.anouncement-title {
+  font-weight: 600;
+}
+.anouncement-bio {
+  font-size: 0.8rem;
 }
