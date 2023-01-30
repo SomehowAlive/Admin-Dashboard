@@ -1,5 +1,5 @@
 :root {
-  --roundness: 35px;
+  --roundness: 20px;
 }
 * {
   padding: 0;
@@ -20,22 +20,29 @@ ul {
 
 body {
   height: 100vh;
+  background-color: rgb(209, 209, 209);
 }
 
 .main {
   display: grid;
-  padding: 1.5rem;
   grid-template-columns: 1fr 5fr;
   grid-template-rows: 1fr 8fr;
+  padding: 1rem;
+  height: 100%;
 }
 
 /* Styling the sidebar */
 .sidebar {
   border-top-left-radius: var(--roundness);
   border-bottom-left-radius: var(--roundness);
-  background-image: url("https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8");
-  background-repeat: repeat;
-  background-size: cover;
+  background: #000046; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #0b85a7, #000046); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #0b85a7,
+    #000046
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   grid-row: 1 / -1;
 }
 
@@ -46,8 +53,6 @@ body {
   grid-template-rows: repeat(3, 1fr);
   gap: 40px;
   align-items: start;
-  background-color: rgba(0, 0, 0, 0.8);
-  backdrop-filter: blur(5px);
 }
 .center-links {
   align-self: center;
@@ -65,11 +70,11 @@ body {
   padding: 1rem;
   margin: 0.5rem 0;
   font-size: 1.5rem;
-  transition: 0.3s ease;
+  transition: 0.2s ease;
 }
 
 .sidebar-link:hover {
-  background-color: rgba(90, 212, 42, 0.4);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 .top-links .sidebar-link:hover {
   background: none;
